@@ -10,7 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Evemt {
+model Event {
   id               String  @id @default(uuid())
   title            String
   details          String?
@@ -19,3 +19,4 @@ model Evemt {
 
   @@map("events") //renomear tabela
 }
+
