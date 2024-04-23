@@ -6,13 +6,15 @@ import { prisma } from "../lib/prisma";
 export async function getEventAttendees(app: FastifyInstance) {
     app.withTypeProvider<ZodTypeProvider>().get('/events/:eventId/attendees', {
         schema: {
+            summary: 'Get event attendees',
+                tags: ['events'],
             params: z.object({
                 eventId: z.string().uuid()
             }),
             querystring: z.object({
-                query: z.string().nullish(),
-                pageIndex: z.string().nullable().default('0').transform(Number) //vem da url então é string, //nullish: null ou undefined
-            }),
+                query: z.string().nullish(),  //nullish: null ou undefined
+                pageIndex: z.string().nullable().default('0').transform(Number)  ///vem da url então é string,
+            }), 
             response: {
                 200: z.object({
                     attendees: z.array(
