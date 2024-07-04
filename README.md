@@ -37,10 +37,6 @@ Para documentação da API, acesse o link: https://nlw-unite-nodejs.onrender.com
 
 Nessa aplicação vamos utilizar banco de dados relacional (SQL). Para ambiente de desenvolvimento seguiremos com o SQLite pela facilidade do ambiente.
 
-### Diagrama ERD
-
-<img src=".github/erd.svg" width="600" alt="Diagrama ERD do banco de dados" />
-
 ### Estrutura do banco (SQL)
 
 ```sql
