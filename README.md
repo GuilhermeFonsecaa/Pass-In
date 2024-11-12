@@ -29,10 +29,6 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 
 - [x] O check-in no evento será realizado através de um QRCode;
 
-## Documentação da API (Swagger)
-
-Para documentação da API, acesse o link: https://nlw-unite-nodejs.onrender.com/docs
-
 ## Banco de dados
 
 Nessa aplicação vamos utilizar banco de dados relacional (SQL). Para ambiente de desenvolvimento seguiremos com o SQLite pela facilidade do ambiente.
